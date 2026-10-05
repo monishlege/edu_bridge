@@ -1,111 +1,15 @@
-package asdfghjkl;
+package edu_bridge;
 
-// this 
-
-public class Demo {
-	int c= 10;
-	int d =20;
-	void add(int a, int b) {
-		System.out.println("sdfsd  " +(a+b));
-		System.out.println("sdfsd  " +(c+d));
-	}
-
-	public static void main(String[] args) {
-		Demo ff = new Demo();
-		ff.add(2, 3);
-	}
+public class oct0110 {
+	int a = 20;
+	int b = 30 ;
+    void add(int a , int b ) {
+    	System.out.println("Sfsgsh "+ (a+b));
+    	System.out.println("Shshsr " + (this.b+a));
+    }
+    
+    public static void main (String [] args) {
+    	oct0110 ff = new oct0110();
+    	ff.add(2,3);
+    }
 }
----------------------------
-
-package asdfghjkl;
-
-// this 
-
-public class Demo {
-	int a= 10;
-	int b =20;
-	void add(int a, int b) {
-		System.out.println("sdfsd  " +(a+b));
-//		System.out.println("sdfsd  " +(c+d));
-	}
-
-	public static void main(String[] args) {
-		Demo ff = new Demo();
-		ff.add(2, 3);
-		
-	}
-}
-
-_---------------------------------
-package asdfghjkl;
-
-// this 
-
-public class Demo {
-	int a = 10;
-	int b = 20;
-
-	void add(int a, int b) {
-System.out.println(this.a+this.b);
-System.out.println(a+b);
-
-	}
-
-	public static void main(String[] args) {
-		Demo ff = new Demo();
-		ff.add(2, 3);
-
-	}
-}
-
------------------------------
-package asdfghjkl;
-
-// this 
-
-public class Demo {
-	int a  ;
-	int b ;
-	void add(int c , int d) {
-		a=c;
-		b=d;
-	}
-	void add1() {
-		 System.out.println(a+b);
-	}
-	public static void main(String[] args) {
-		Demo ff = new Demo();
-		ff.add(2, 3);
-		ff.add1();
-
-	}
-}
-
-
-------------------------
-
-package asdfghjkl;
-
-// this 
-
-public class Demo {
-   int a ;
-   int b ;
-	void add(int a , int b) {
-		this.a=a;
-		this.b=b;
-
-	}
-	void add1() {
-	System.out.println(a+b);
-		
-	}
-	public static void main(String[] args) {
-		Demo ff = new Demo();
-		ff.add(2, 3);
-ff.add1();
-
-	}
-}
-
-------------------------------
