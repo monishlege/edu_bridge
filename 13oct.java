@@ -16,12 +16,22 @@ public class sep06 {
         sb.deleteCharAt(0);
         System.out.println("After deleteCharAt: " + sb);
 
-        String sub = sb.toString().substring(1, 4);
+        sb.replace(1, 3, "AB");
+        System.out.println("After replace: " + sb);
+
+        String finalStr = sb.toString();
+        System.out.println("Starts with 'S': " + finalStr.startsWith("S"));
+        System.out.println("Ends with 'h': " + finalStr.endsWith("h"));
+
+        String sub = finalStr.substring(1, 4);
         System.out.println("Substring: " + sub);
 
-        String upperStr = sb.toString().toUpperCase();
+        String upperStr = finalStr.toUpperCase();
         System.out.println("Uppercase string: " + upperStr);
 
-        System.out.println("Equals check: " + upperStr.equals("SSHUIH"));
+        String lowerStr = upperStr.toLowerCase();
+        System.out.println("Lowercase string: " + lowerStr);
+
+        System.out.println("Equals check: " + upperStr.equals("SABUIH"));
     }
 }
